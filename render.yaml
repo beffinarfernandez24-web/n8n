@@ -30,7 +30,7 @@ services:
       # encrypted with the previous value.
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
-        key: web_hook
+      -key: web_hook
         value: https://n8n-service-h3yi.onrender.com
 
       # These automatically populate connection details 
