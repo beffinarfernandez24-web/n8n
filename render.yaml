@@ -22,6 +22,8 @@ services:
     #
     # You can define additional environment variables as needed.
     envVars:
+     key: WEBHOOK_URL
+         value: https://n8n-service-h3yi.onrender.com/
       # Generates a base64-encoded key for
       # encrypting credentials in n8n
       #
@@ -30,9 +32,6 @@ services:
       # encrypted with the previous value.
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
-         key: webhook_url
-         value: https://n8n-service-h3yi.onrender.com
-
       # These automatically populate connection details 
       # for the Render Postgres database defined below
       - key: DB_TYPE
